@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="default.master.cs" Inherits="Books._default" %>
+<%@ Register Src="~/header.ascx" TagName="myheader" TagPrefix="s"  %>
+<%@ Register Src="~/footer.ascx" TagName="myfooter" TagPrefix="s" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title>Free Book</title>
+    <meta name="description" content="here you can have any book you wish for. you only need to search that book.if you need any book you can request for book." />
+    <meta name="keywords" content="book,request for book, need the book"/>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="menu.css" rel="stylesheet" />
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="menu.js"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div>
+            <table>
+                <tr>
+                    <td><s:myheader id="h1" runat="server"></s:myheader></td>
+                </tr>
+                <tr>
+                    <td> <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                          </asp:ContentPlaceHolder></td>
+                </tr>
+                <tr>
+                    <td><s:myfooter id="f1" runat="server"></s:myfooter></td>
+                </tr>
+            </table>
+           
+        </div>
+    </form>
+</body>
+</html>
